@@ -8,6 +8,5 @@ public class Main {
         String input = JOptionPane.showInputDialog("Enter a string to match: ");
         System.out.println(With.Contains(input));
         System.out.println(With.Loop(input));
-
     }
 }
