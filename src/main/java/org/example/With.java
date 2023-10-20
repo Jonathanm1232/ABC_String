@@ -18,7 +18,7 @@ public class With {
         }
         return matchedvalues;
     }
-    public static StringBuilder Something (String input) {
+    public static StringBuilder Loop(String input) {
         StringBuilder matchedvalues = new StringBuilder();
         char[] inputArray = input.toCharArray();
         for (int i = 0; i < input.length(); i++) {
