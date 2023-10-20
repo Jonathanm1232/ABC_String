@@ -1,24 +1,22 @@
 package org.example;
 
 public class With {
-    public static StringBuilder Contains (String input) {
+    public static String Contains (String input) {
         StringBuilder matchedvalues = new StringBuilder();
         char[] inputArray = input.toCharArray();
         for (int i = 0; i < input.length(); i++) {
-            if (matchedvalues.toString().contains("" + inputArray[i])) {}
-            else {
+            if (!matchedvalues.toString().contains("" + inputArray[i])) {
                 matchedvalues.append(inputArray[i]);
             }
         }
         for (char alphabet = 'a'; alphabet <= 'z'; alphabet++) {
-            if (matchedvalues.toString().contains("" + alphabet)) {}
-            else {
+            if (!matchedvalues.toString().contains("" + alphabet)) {
                 matchedvalues.append(alphabet);
             }
         }
-        return matchedvalues;
+        return matchedvalues.toString();
     }
-    public static StringBuilder Loop(String input) {
+    public static String Loop(String input) {
         StringBuilder matchedvalues = new StringBuilder();
         char[] inputArray = input.toCharArray();
         for (int i = 0; i < input.length(); i++) {
@@ -45,6 +43,6 @@ public class With {
                 matchedvalues.append(alphabet);
             }
         }
-        return matchedvalues;
+        return matchedvalues.toString();
     }
 }
